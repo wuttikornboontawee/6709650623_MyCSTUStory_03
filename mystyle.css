@@ -12,12 +12,19 @@ nav {
     background-color: #3f3e3d;
     padding: 15px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
 }
 
-nav ul {
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    
 }
 
 nav ul li {
@@ -47,17 +54,17 @@ body{
     font-weight: 0;
 font-size:xx-large;
 
+
+
+
 }
-#me{
-    width: 400px;
-    height: 50%;
-    border: 30px solid #d3c8bf;
-    border-radius: 10px; 
-    padding: 10px 15px 20px 25px;;
-    margin: 10px 15px 20px 25px;;
+video, img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
+  
   
 }
 .data{ font-family: Arial, Helvetica, sans-serif ;
@@ -97,6 +104,10 @@ font-size:xx-large;
          font-size: 24pt;
          color: green;
          font-family: Arial, Helvetica, sans-serif ;
+         display: block;
+    margin: 20px auto;
+    width: 100%;
+    height: auto;
          
 }
 
@@ -134,12 +145,7 @@ font-size:xx-large;
 
 }
 
-.vid{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+
 
 
 /*my future.html*/
@@ -288,4 +294,94 @@ font-size:xx-large;
 
 .back-button:hover {
     background-color: #b2cdf0;
+}
+
+@media (max-width: 768px){
+    video, img {
+        width: 50%;
+    }
+    h1 {
+        font-size: 2em;
+} 
+nav {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+@media (max-width: 360px){
+    video, img {
+        width: 50%;
+    }
+    h1 {
+        font-size: 2em;
+} 
+nav {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #333;
 }
