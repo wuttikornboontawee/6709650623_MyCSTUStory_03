@@ -178,13 +178,17 @@ video, img{
 .content{
     text-align: center;
     background-color: #fafafa;
-    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     padding: 20px;
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 25px;
+        border-radius: 10px;
+    }
+    
 
     
-}
 
 .content h2 {
     font-size: 2em;
@@ -296,7 +300,11 @@ video, img{
     background-color: #b2cdf0;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {}
+.content{ 
+    padding: 15px
+}
+
     video, img {
         width: 50%;
     }
@@ -341,8 +349,11 @@ nav ul li a:hover {
     color: #333;
 }
 
-@media (max-width: 360px){
-    video, img {
+@media (max-width: 360px) {}
+.content{ 
+    padding: 15px
+}
+video, img {
         width: 50%;
     }
     h1 {
